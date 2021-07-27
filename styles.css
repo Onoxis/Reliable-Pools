@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,100;1,300;1,400;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background: #24252A;
+    }
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    margin: 2px;
+}
+
+.nav_links li {
+    display: inline-block;
+    text-transform: uppercase;
+    /* border-bottom: white solid 1px; */
+    border-top: white solid 1px;
+    margin: 2px 20px;
+    padding: 3px 0px;
+    
+    }
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: aquamarine;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: teal;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.mainpoolimg {
+    position: realtive;
+    width: 100%;
+    max-height: 1900px;
+}
+
+.contentbox1, .contentbox2, .contentbox3 {
+    border: rgba(0,136,169,0.8) solid 2px;
+    padding: 30px 10px;
+    width: 25vw;
+    height: 30vh;
+    display: inline-flex;
+    background: rgb(255, 255, 255);
+    position: relative;
+    /* margin: 60px 0px; */
+    border-radius: 0px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3vw;
+    color: rgb(49, 122, 124);
+    text-align: center;
+}
+.contentbox1 {
+    position: absolute;
+    left: 3.5%;
+}
+.contentbox2 {
+    position: absolute;
+    left: 36.8%;
+}
+.contentbox3 {
+    position: absolute;
+    left: 70%;
+    z-index: 2;
+}
+
+.contentboxesmain {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.demotext {
+    position: relative;
+    top: 15vh;
+    color: white;
+    margin: 5px;
+}
+/* .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .phonebutton {
+    width: 200px;
+    height: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+    color: rgb(20, 82, 57);
+    background-color: #fff;
+    border: solid 3px #2EE59D;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding: 8px;
+    }
+
+  .phonebutton:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  .contentboxesmain center {
+      background-color: rgba(245, 245, 245, 0.733);
+      
+  }
+
+@media (max-width: 500px) {
+    * {
+        align-items: center;
+    }
+    header {
+        display: inline;
+        vertical-align: middle;
+        padding: 30px;
+        align-items: center;
+    }
+        .nav_links {
+        line-height: 30px;
+        position: relative;
+        margin: auto;
+        padding-top: 15px;
+        display: flex;  
+        justify-content: center;  
+        flex-direction: column;  
+        align-items: center;
+        padding-bottom: 10px;
+        vertical-align: middle;
+        }
+    .nav_links li a {
+        display: block;
+        background: white;
+        margin: 0px 0px;
+        border: rgba(0,136,169,0.8) solid 2.5px;
+        padding: 5px 15px;
+        color: black;
+        border-radius: 0px;
+        width: 100vw;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.2em;
+        }
+        .nav_links li {
+            border: none;
+            padding: 1px;
+            margin: 0px 0px;
+        }
+    .logo {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        display: flex; 
+        position: reltive;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        margin-left: 15%;
+    }
+    .phonebutton {
+        display: flex;
+        padding: 15px;
+        position: relative;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .contentbox1, .contentbox2, .contentbox3 {
+        border: rgba(0,136,169,0.8) solid 2px;
+        width: 125px;
+        height: 125px;
+        display:inline-flex;
+        padding: 3px;
+        margin: auto;
+        text-align: center;
+        border-radius: 5px;
+        vertical-align: middle;
+    }
+    .contentboxesmain {
+        display: flex;
+        margin: auto;
+        height: 150px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1178px) {
+        .nav_links li {
+        display: block;
+        text-transform: uppercase;
+        border-bottom: white solid 1px;
+        border-top: white solid 1px;
+        margin: 4px 20px;
+        padding: 3px 5px;
+        border: white solid 1px;
+    }
+
+    .contentbox1, .contentbox2, .contentbox3 {
+        border: rgba(0,136,169,0.8) solid 2px;
+        width: 25vw;
+        height: 30vh;
+        display:inline-flex;
+        padding: 5px;
+        margin: 30px auto;
+        text-align: center;
+        border-radius: 5px;
+        vertical-align: middle;
+}
+}
