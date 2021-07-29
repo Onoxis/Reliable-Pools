@@ -7,6 +7,8 @@
     background: #24252A;
     }
 
+
+
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -181,22 +183,24 @@ button:hover {
         padding-bottom: 10px;
         vertical-align: middle;
         }
+
     .nav_links li a {
         display: block;
-        background: white;
+        background: rgb(59, 59, 59, 0.815);
         margin: 0px 0px;
-        border: rgba(0,136,169,0.8) solid 2.5px;
+        border: rgba(255, 255, 255, 0.8) solid 1px;
         padding: 5px 15px;
-        color: black;
+        color: lightgrey;
         border-radius: 0px;
         width: 100vw;
         text-align: center;
         font-weight: 500;
         font-size: 1.2em;
         }
-        .nav_links li {
+
+    .nav_links li {
             border: none;
-            padding: 1px;
+            padding: 0px;
             margin: 0px 0px;
         }
     .logo {
@@ -230,8 +234,13 @@ button:hover {
     }
     .contentboxesmain {
         display: flex;
-        margin: auto;
+        margin-bottom: -170px;;
         height: 150px;
+    }
+    .main-text-header {
+        text-align: center;
+        margin: auto;
+        align-items: centerfirefo;
     }
 }
 
