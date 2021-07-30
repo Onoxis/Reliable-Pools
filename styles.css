@@ -176,6 +176,7 @@ button:hover {
     text-align: center;
     padding-top: 20px;
     text-decoration: underline;
+    margin-bottom: 15px;;
 }
 
  #poolshape {
@@ -183,24 +184,43 @@ button:hover {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
-    margin-top: 20px;
  }
 
  #poolshape li {
     list-style-type: none;
-    margin: 20px;
+    margin: 20px 20px;
     padding: 8px;
-    border: white 3px solid
+    border: white 3px solid;
  }
 
- #poolshape li:nth-child(odd) {
+  #poolshape li:nth-child(odd) {
      background: rgba(46, 229, 157, 0.4);  
  }
 
  ul li img {
-     width: 15vw;
+     width: 15rem;
  }
+
+ #contact-list {
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: left;
+    align-items:flex-start;
+    list-style-type: none;
+    margin: 15px;
+    padding-bottom: 20px;;
+ }
+
+ #contact-list li {
+     margin: 15px;
+     width: 50%;
+ }
+
+#contact-form {
+    color: rgba(46, 229, 157, 0.4);
+    margin: 15px;
+}
+
 
 /* Media Queries to adjust the view when in tablet mode and mobile mode. */
 
