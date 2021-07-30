@@ -276,6 +276,12 @@ border-bottom-right-radius: 10px;
 box-shadow: 15px 10px 20px #000;
 }
 
+/* Form styling*/
+
+#name, #mail, #msg, #phonenumber {
+    color: lightgray;
+    font-size: larger;
+}
 
 /* Media Queries to adjust the view when in tablet mode and mobile mode. */
 
