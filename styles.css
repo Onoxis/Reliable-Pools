@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,100;1,300;1,400;1,800&display=swap');
 
+/* General Styling of Major elements to Site */
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -29,6 +31,8 @@ header {
     width: 250px;
 }
 
+/* Navigation Menu Section */
+
 .nav_links {
     list-style: none;
     margin: 2px;
@@ -52,6 +56,9 @@ header {
     color: aquamarine;
 }
 
+
+/* Call Button Animation on Hover */
+
 button {
     padding: 9px 25px;
     background-color: teal;
@@ -71,9 +78,46 @@ button:hover {
     max-height: 1900px;
 }
 
+.phonebutton {
+    width: 200px;
+    height: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+    color: rgb(20, 82, 57);
+    background-color: #fff;
+    border: solid 3px #2EE59D;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding: 8px;
+    }
+
+  .phonebutton:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+/* Main Text Content At Lower Portion of Page */
+
 #main-text {
     padding: 0px 55px;
 }
+
+#main-text-header {
+    margin-left: 25px;
+    color: rgba(46, 229, 157, 0.4);
+}
+
+
+/* Content boxes in the center of the site. Styling and location. */
 
 .contentbox1, .contentbox2, .contentbox3 {
     border: rgb(255, 255, 255) solid 2px;
@@ -92,7 +136,7 @@ button:hover {
     color: rgb(255, 255, 255);
     text-align: center;
     max-height: 350px;
-    font;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .contentbox1 {
     position: absolute;
@@ -122,44 +166,43 @@ button:hover {
     color: white;
     margin: 5px;
 }
-/* .wrap {
-    height: 100%;
-    display: flex;
+
+    .contentboxesmain center {
+      background-color: rgba(245, 245, 245, 0.733);   
+  }
+
+ /* Pool shape section stlying */
+#pool-shape-header {
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+ #poolshape {
     align-items: center;
     justify-content: center;
-  } */
-  
-  .phonebutton {
-    width: 200px;
-    height: 45px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 900;
-    color: rgb(20, 82, 57);
-    background-color: #fff;
-    border: solid 3px #2EE59D;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 20px;
+ }
+
+ #poolshape li {
+    list-style-type: none;
+    margin: 20px;
     padding: 8px;
-    }
+    border: white 3px solid
+ }
 
-  .phonebutton:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
-  }
+ #poolshape li:nth-child(odd) {
+     background: rgba(46, 229, 157, 0.4);  
+ }
 
-  .contentboxesmain center {
-      background-color: rgba(245, 245, 245, 0.733);
-      
-  }
+ ul li img {
+     width: 15vw;
+ }
+
+/* Media Queries to adjust the view when in tablet mode and mobile mode. */
 
 @media (max-width: 500px) {
     * {
@@ -240,7 +283,7 @@ button:hover {
     .main-text-header {
         text-align: center;
         margin: auto;
-        align-items: centerfirefo;
+        align-items: center;
     }
 }
 
